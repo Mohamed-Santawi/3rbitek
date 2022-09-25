@@ -1,0 +1,183 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Cairo", sans-serif;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small Screen */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Meduim Screen */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large Screen */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+.ad-section {
+    position: relative;
+    height: 500px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #eee;
+  }
+  .ads-sub {
+    display: block;
+  }
+  .ad-section .container h2 {
+    padding: 20px;
+    text-align: center;
+    color: var(--second-color);
+  }
+  .ad-section .container {
+    position: relative;
+    top: 20px;
+    padding: 20px;
+    border: 1px solid rgb(211, 206, 206);
+    box-shadow: 1px 1px 7px ;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+  }
+  .ad-section .container .ads-section-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 20px;
+  }
+ .advert-box {
+    background-color:var(--second-color);
+    border-radius: 6px;
+ }
+ .advert-box li {
+    text-align: center;
+    color: #fff;
+  }
+  .advert-box li a {
+    color: #fff;
+    cursor: pointer;
+  }
+  .advert-box li a p:not(.spare){
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .advert-box li a p.spare {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .ads-sub-sub .head-sub {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .ads-sub-sub .head-sub h2 {
+    color: var(--second-color);
+    position: relative;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .fa-arrow-left {
+    position: absolute;
+    color: var(--first-color);
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: bold;
+    left: 0;
+  }
+  .fa-arrow-right {
+    position: absolute;
+    color: var(--first-color);
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: bold;
+    right: 0;
+  }
+  /* .ads-sub-sub .head-sub h2::before {
+    font-family: "fontAwesome";
+    content: "\f060";
+    color: var(--first-color);
+    position: absolute;
+    left: -20px;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: var(--beforeOpacity,1);
+  } */
+  /* .ads-sub-sub .head-sub h2::after {
+    font-family: "fontAwesome";
+    content: "\f061";
+    color: var(--first-color);
+    position: absolute;
+    right: -20px;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: var(--afterOpacity,1);
+  } */
+  /* End ad-section */
+  /* Start Offer Type Section ads-sub-sub */
+  .ads-sub-sub {
+    display: none;
+  }
+  .ads-box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sale {
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: var(--second-color);
+    border-radius: 6px;
+  }
+  .sale a {
+    color: #fff;
+    font-size: 20px;
+  }
+  .rent {
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: var(--second-color);
+    border-radius: 6px;
+  }
+  .rent a {
+    color: #fff;
+    font-size: 20px;
+  }
+  /* End Offer Type Section ads-sub-sub */
+  
