@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-trans="rentCar">Rent A Car</title>
+      <!-- Render All Elements Normally -->
+      <link rel="stylesheet" href="CSS/normalize.css">
+      <!-- Font Awesome Library -->
+      <link rel="stylesheet" href="CSS/all.min.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <!-- Main CSS File -->
+      <link rel="stylesheet" href="CSS/style.css">
+      <!-- Sale CSS File -->
+      <link rel="stylesheet" href="CSS/sale.css">
+         <!-- Mobile Screen Media CSS File -->
+         <link rel="stylesheet" href="CSS/mob-screen.css" media="(max-width:767px)">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+          href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet" />
+</head>
+<body id="sale-body">
+        <!-- Start Header -->
+        <header>
+            <div class="container">
+                <div class="head">
+                    <h1>
+                        <a href="#index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </h1>
+                </div>
+                <div class="head-list">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="active" data-trans="home">Home</a></li>
+                            <li class="log"><a href="#login" data-trans="login">Login</a> <i
+                                    class="fa-solid fa-right-to-bracket"></i>
+                            </li>
+                            <div class="button-section">
+                                <button value="en" class="btn-class-en" data-trans="english" id="eng-btn">English</button>
+                                <button value="ar" class="btn-class-ar" data-trans="arabic" id="arb-btn">Arabic</button>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start Input -->
+        <div class="input-area">
+            <div class="container">
+                <div class="search-box">
+                    <div class="search-area">
+                        <input dir="auto" type="text" class="input" id="input-search"
+                            placeholder="What are you looking for ?">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="offer">
+                        <div class="offer-i">
+                            <i class="fa-solid fa-wrench"></i><i class="fa-solid fa-car"></i>
+                        </div>
+                        <div class="offer-a">
+                            <a href="offer.html" target="_blank" id="offer-id" class="post" data-trans="post"> Post Your
+                                Offer </a>
+                        </div>
+                        <div class="offer-span-free">
+                            <span data-trans="freePost" class="free">Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Input -->
+        <!-- Start Sale Section -->
+        <div class="sale-section">
+            <!-- <div class="container"> -->
+                <div class="sale-sub">
+                    <h2 data-trans="carBrand">Choose Car Brand</h2>
+                    <input type="text"  dir="auto" class="sale-search" placeholder="Search" id="sale-search-id">
+                    <div class="sale-image">
+                        <li id="sale-img-1" data-search="hyundai">
+                          <a>
+                            <img src="img/1.png" alt="">
+                            <p data-trans="hyundai">Hyundai</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-2" data-search="kia">
+                          <a>
+                            <img src="img/71.jpg" alt="">
+                            <p data-trans="kia">KIA</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-3" data-search="bmw">
+                          <a>
+                            <img src="img/3.png" alt="">
+                            <p data-trans="bmw">BMW</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-4" data-search="nissan">
+                          <a>
+                            <img src="img/4.png" alt="">
+                            <p data-trans="nissan">Nissan</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-5" data-search="toyota">
+                          <a>
+                            <img src="img/5.png" alt="">
+                            <p data-trans="toyota">Toyota</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-6" data-search="mercedes benz">
+                          <a>
+                            <img src="img/6.png" alt="">
+                            <p data-trans="mercedes">Mercedes Benz</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-7" data-search="ford">
+                          <a>
+                            <img src="img/7.png" alt="">
+                            <p data-trans="ford">Ford</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-8" data-search="mitsubishi">
+                          <a>
+                            <img src="img/8.png" alt="">
+                            <p data-trans="mitsu"> Mitsubishi</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-9" data-search="chevrolet">
+                          <a>
+                            <img src="img/9.png" alt="">
+                            <p data-trans="chevrolet">Chevrolet</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-10" data-search="honda">
+                          <a>
+                            <img src="img/10.png" alt="">
+                            <p data-trans="honda">Honda</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-11" data-search="peugeot">
+                          <a>
+                            <img src="img/11.png" alt="">
+                            <p data-trans="Peugeot">Peugeot</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-12" data-search="volkswagen">
+                          <a>
+                            <img src="img/12.png" alt="">
+                            <p data-trans="Volkswagen">Volkswagen</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-13" data-search="opel">
+                          <a>
+                            <img src="img/13.png" alt="">
+                            <p data-trans="Opel">Opel</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-14" data-search="lexus">
+                          <a>
+                            <img src="img/14.png" alt="">
+                            <p data-trans="Lexus">Lexus</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-15" data-search="fiat">
+                          <a>
+                            <img src="img/15.png" alt="">
+                            <p data-trans="fiat">Fiat</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-16" data-search="skoda">
+                          <a>
+                            <img src="img/16.png" alt="">
+                            <p data-trans="skoda">Skoda</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-17" data-search="mazda">
+                          <a>
+                            <img src="img/17.png" alt="">
+                            <p data-trans="mazda">Mazda</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-18" data-search="daweo">
+                          <a>
+                            <img src="img/18.png" alt="">
+                            <p data-trans="Daweo">Daweo</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-19" data-search="isuzu">
+                          <a>
+                            <img src="img/19.png" alt="">
+                            <p data-trans="Isuzu">Isuzu</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-20" data-search="audi">
+                          <a>
+                            <img src="img/20.png" alt="">
+                            <p data-trans="Audi">Audi</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-21" data-search="chrysler">
+                          <a>
+                            <img src="img/21.png" alt="">
+                            <p data-trans="chrysler">Chrysler</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-22" data-search="lada">
+                          <a>
+                            <img src="img/22.png" alt="">
+                            <p data-trans="lada">Lada</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-23" data-search="porsche">
+                          <a>
+                            <img src="img/23.png" alt="">
+                            <p data-trans="porsche">Porsche</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-24" data-search="seat">
+                          <a>
+                            <img src="img/24.png" alt="">
+                            <p data-trans="seat">Seat</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-25" data-search="volvo">
+                          <a>
+                            <img src="img/25.png" alt="">
+                            <p data-trans="volvo">Volvo</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-26" data-search="renault">
+                          <a>
+                            <img src="img/26.png" alt="">
+                            <p data-trans="renault">Renault</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-27" data-search="land rover">
+                          <a>
+                            <img src="img/27.png" alt="">
+                            <p data-trans="landRover">Land Rover</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-28" data-search="suzuki">
+                          <a>
+                            <img src="img/28.png" alt="">
+                            <p data-trans="suzuki">Suzuki</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-29" data-search="jeep">
+                          <a>
+                            <img src="img/29.png" alt="">
+                            <p data-trans="jeep">Jeep</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-30" data-search="subaru">
+                          <a>
+                            <img src="img/30.png" alt="">
+                            <p data-trans="subaru">Subaru</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-31" data-search="tesla">
+                          <a>
+                            <img src="img/31.png" alt="">
+                            <p data-trans="tesla">Tesla</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-32" data-search="dodge">
+                          <a>
+                            <img src="img/32.png" alt="">
+                            <p data-trans="dodge">Dodge</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-33" data-search="cadillac">
+                          <a>
+                            <img src="img/33.png" alt="">
+                            <p data-trans="cadillac">Cadillac</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-34" data-search="daihatsu">
+                          <a>
+                            <img src="img/34.png" alt="">
+                            <p data-trans="daihatsu">Daihatsu</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-35" data-search="gmc">
+                          <a>
+                            <img src="img/35.png" alt="">
+                            <p data-trans="gmc">GMC</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-36" data-search="mini cooper">
+                          <a>
+                            <img src="img/36.png" alt="">
+                            <p data-trans="miniCooper">Mini Cooper</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-37" data-search="alfa romeo">
+                          <a>
+                            <img src="img/37.png" alt="">
+                            <p data-trans="alfaRomeo">Alfa Romeo</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-38" data-search="iveco">
+                          <a>
+                            <img src="img/38.png" alt="">
+                            <p data-trans="iveco">Iveco</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-39" data-search="geely">
+                          <a>
+                            <img src="img/39.png" alt="">
+                            <p data-trans="geely">Geely</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-40" data-search="chery">
+                          <a>
+                            <img src="img/40.png" alt="">
+                            <p data-trans="chery">Chery</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-41" data-search="jac">
+                          <a>
+                            <img src="img/41.png" alt="">
+                            <p data-trans="jac">JAC</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-42" data-search="abarth">
+                          <a>
+                            <img src="img/42.png" alt="">
+                            <p data-trans="abarth">Abarth</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-43" data-search="ac">
+                          <a>
+                            <img src="img/43.png" alt="">
+                            <p data-trans="ac">AC</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-44" data-search="acura">
+                          <a>
+                            <img src="img/44.png" alt="">
+                            <p data-trans="acura">Acura</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-45" data-search="aiaxm">
+                          <a>
+                            <img src="img/45.png" alt="">
+                            <p data-trans="aiaxm">Aiaxm</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-46" data-search="alpina">
+                          <a>
+                            <img src="img/46.png" alt="">
+                            <p data-trans="alpina">Alpina</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-47" data-search="bentley">
+                          <a>
+                            <img src="img/47.png" alt="">
+                            <p data-trans="bentley">Bentley</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-48" data-search="brilliance">
+                          <a>
+                            <img src="img/48.png" alt="">
+                            <p data-trans="brilliance">Brilliance</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-49" data-search="changan">
+                          <a>
+                            <img src="img/49.png" alt="">
+                            <p data-trans="changan">Changan</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-50" data-search="citroen">
+                          <a>
+                            <img src="img/50.png" alt="">
+                            <p data-trans="citroen">Citroen</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-51" data-search="datsun">
+                          <a>
+                            <img src="img/51.png" alt="">
+                            <p data-trans="datsun">Datsun</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-52" data-search="ferrari">
+                          <a>
+                            <img src="img/52.png" alt="">
+                            <p data-trans="ferrari">Ferrari</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-53" data-search="hummer">
+                          <a>
+                            <img src="img/53.png" alt="">
+                            <p data-trans="hummer">Hummer</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-54" data-search="infinity">
+                          <a>
+                            <img src="img/54.png" alt="">
+                            <p data-trans="infinity">Infinity</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-55" data-search="jaguar">
+                          <a>
+                            <img src="img/55.png" alt="">
+                            <p data-trans="jaguar">Jaguar</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-56" data-search="jmc">
+                          <a>
+                            <img src="img/56.png" alt="">
+                            <p data-trans="jmc">JMC</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-57" data-search="lamborgini">
+                          <a>
+                            <img src="img/57.png" alt="">
+                            <p data-trans="lamborgini">Lamborgini</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-58" data-search="ssangyong">
+                          <a>
+                            <img src="img/58.png" alt="">
+                            <p data-trans="ssangyong">Ssangyong</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-59" data-search="mg">
+                          <a>
+                            <img src="img/59.png" alt="">
+                            <p data-trans="mg">MG</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-60" data-search="byd">
+                          <a>
+                            <img src="img/60.png" alt="">
+                            <p data-trans="byd">BYD</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-61" data-search="proton">
+                          <a>
+                            <img src="img/61.png" alt="">
+                            <p data-trans="proton">Proton</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-62" data-search="jetour">
+                          <a>
+                            <img src="/img/62.jpg" alt="">
+                            <p data-trans="jetour">Jetour</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-63" data-search="baic">
+                          <a>
+                            <img src="img/63.jpg" alt="">
+                            <p data-trans="baic">BAIC</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-64" data-search="bestune">
+                          <a>
+                            <img src="img/64.jpg" alt="">
+                            <p data-trans="bestune">Bestune</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-65" data-search="dongfeng">
+                          <a>
+                            <img src="img/65.jpg" alt="">
+                            <p data-trans="dongfeng">Dong Feng</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-66" data-search="ds">
+                          <a>
+                            <img src="img/66.jpg" alt="">
+                            <p data-trans="ds">DS</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-67" data-search="sang yong">
+                          <a>
+                            <img src="img/67.jpg" alt="">
+                            <p data-trans="sangyong">Sang Yong</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-68" data-search="forthing">
+                          <a>
+                            <img src="img/68.jpg" alt="">
+                            <p data-trans="forthing">Forthing</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-69" data-search="kaiyi">
+                          <a>
+                            <img src="img/69.jpg" alt="">
+                            <p data-trans="kaiyi">Kaiyi</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-70" data-search="cupra">
+                          <a>
+                            <img src="img/70.jpg" alt="">
+                            <p data-trans="cupra">Cupra</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-72" data-search="maserati">
+                          <a>
+                            <img src="img/72.jpg" alt="">
+                            <p data-trans="maserati">Maserati</p>
+                          </a>
+                        </li>
+                        <li id="sale-img-73" data-search="haval">
+                          <a>
+                            <img src="img/73.jpg" alt="">
+                            <p data-trans="haval">Haval</p>
+                          </a>
+                        </li>
+                      </div>
+                </div>
+            <!-- </div> -->
+        </div>
+        <!-- End Sale Section -->
+           <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <div class="footer-head">
+                    <!-- <h1>
+            <a href="#index.html">
+              <img src="img/logo.png" alt="">
+            </a>
+          </h1> -->
+                    <h1><a href="">3rbitek<span class="head-span">.com</span></a> <i class="fa-solid fa-car-side"></i>
+                    </h1>
+                </div>
+                <div class="footer-text">
+                    <p class="text" data-trans="text">
+                        All Vehicles In One Place | New & Used Cars , Trucks , Buses , Vans , Trailer , Heavy Equipment
+                        and
+                        Spare
+                        Parts , Research & Compare Models , Find Local Dealers , Sell Your Car & More
+                    </p>
+                </div>
+                <div class="footer-info">
+                    <p class="info" data-trans="contact">Contact Us On </p>
+                    <a class="mail" id="footer-mail" href="mailto:info@3rbitek.com"
+                        data-trans="mail">info@3rbitek.com</a>
+                    <p class="follow-us" data-trans="follow">Follow Us On</p>
+                    <ul class="social">
+                        <li>
+                            <a href="#" class="facebook"><i class="fa-brands fa-facebook-f "></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="foot2" data-trans="copyright">
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear());
+            </script> 3rbitek.com All Rights Reserved
+        </p>
+    </div>
+    <!-- End Footer -->
+    <script src="main.js"></script>
+    <!-- <script src="offer.js"></script> -->
+    <script src="sale.js"></script>
+</body>
+</html>
